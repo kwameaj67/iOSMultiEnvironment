@@ -11,9 +11,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        print("DEBUG: Environment: \(BuildConfiguration.shared.environment)")
+        print("DEBUG: API URL: \(BuildConfiguration.shared.baseURL)")
     }
-
-
 }
 
